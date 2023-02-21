@@ -1,0 +1,58 @@
+.users {
+  position: relative;
+}
+.users__title {
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+.users__title span {
+  border-bottom: 2px dashed rgb(26, 26, 29);
+}
+
+.popup {
+  z-index: 2;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  margin-top: 15px;
+  background: #ffffff;
+  box-shadow: 0 0 5px 5px rgba(26, 26, 29, 0.25);
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 10px 0;
+  animation-name: popup;
+  animation-duration: 0.45s;
+}
+.popup__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+.popup__item {
+  text-align: center;
+  padding: 10px;
+  font-size: 15px;
+}
+.popup__item:hover {
+  background-color: #ececec;
+}
+.popup__item:active {
+  background-color: #e7e7e7;
+}
+.popup__activeItem {
+  background-color: lightgray;
+}
+
+@keyframes popup {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*# sourceMappingURL=Users.module.css.map */

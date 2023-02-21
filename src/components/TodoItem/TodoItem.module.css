@@ -1,0 +1,29 @@
+.todoItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  border: 1px solid rgb(26, 26, 29);
+  border-radius: 15px;
+  padding: 10px;
+  transition-duration: 0.2s;
+}
+.todoItem__input:checked + .todoItem__text {
+  text-decoration: line-through;
+}
+.todoItem__text {
+  color: rgb(26, 26, 29);
+  word-break: break-word;
+  font-size: 20px;
+}
+.todoItem__button {
+  margin-left: auto;
+  font-size: 30px;
+  background: transparent;
+  color: rgba(26, 26, 29, 0.55);
+}
+.todoItem__button:hover {
+  color: rgb(26, 26, 29);
+}
+
+/*# sourceMappingURL=TodoItem.module.css.map */
